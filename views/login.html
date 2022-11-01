@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!--5.sitio responsive-->
+    <title>Bienvenido a Mercadoliebre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--3.cargo mi fuente desde google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--3.parte del link copiado-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!--3.parte del link copiado-->
+    <link rel="stylesheet" href="/css/styles.css"> <!--2.llamo a la hoja de estilo-->
+    <link rel="icon" href="images/logo-mercado-liebre.svg">  <!--1.agrego el logo de ML al head así y luego agrego el app.use en app.js. ¿Qué veo en el nav? el logo de ML en la pestaña del explorador-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+rel="stylesheet" />  <!--4.linkeo los iconos-->
+    
+</head>
+
+<body>
+    <header>
+       <div class="top-header">
+        <div class="logo">
+        <img src="/images/logo-mercado-liebre.svg" alt="Logo ML">
+        </div>
+        <section class="fondo">
+            <input placeholder="Buscar productos, marcas...">
+             <button type="search"><i class="fas fa-search"></i></button>
+        </section>
+        <p class="title"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div> 
+        <nav>
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+    
+            <ul>
+                <li><a href="/register">Creá tu cuenta</a><i class="far fa-id-card"></i></li>
+                <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </nav>
+
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+        <!--formulario-->
+        <main class="login">
+            <form action="/login" method="POST" class="form-login">
+                <input type="text" name="userName" placeholder="Nombre de usuario">
+                <input type="password" name="password" placeholder="Elegí tu contraseña">
+                <input type="submit" class="btn-submit" value="Enviar">
+            </form>
+        </main>
+ 
+ 
+        <!--footer-->
+
+        <footer class="main-footer"> 
+            <div>
+               <section class="info">
+                   <i class="fas fa-credit-card"></i>
+                   <article><strong>Pagá con tarjeta o en efectivo</strong></article>
+                   <article>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</article>
+               </section>
+       
+               <section class="info">
+                   <i class="fas fa-gift"></i>
+                   <article><strong>Envío gratis desde $2.500</strong></article>
+                   <article>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</article>
+               </section>
+       
+               <section class="info">
+                   <i class="fas fa-user-shield"></i>
+                   <article><strong>Seguridad, de principio a fin</strong></article>
+                   <article>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@</article>
+               </section>
+           
+               <section class="more-info">
+                   <article><strong>Copyright© 1999-2020 MercadoLiebre S.R.L.</strong></article>
+               </section>
+           </div>
+           </footer>
+    </body>
+</html>

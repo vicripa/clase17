@@ -1,0 +1,364 @@
+* {         /*BONUS TRACK: recomendación de leo para empezar una stylesheet*/
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{          /*BONUS TRACK: con root habilito toda la paleta de mi proyecto para evitar copy paste*/
+    --yellow: #EAC926;
+    --dark-blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+}
+/*¿cómo lo uso? x ej background-color: var(--color que quiero)*/
+
+body {
+    background-color: #ebebeb;  /**defino el color de fondo*/
+    font-family: 'Roboto', sans-serif;
+    
+} 
+header{
+    background-color: #EAC926;  /**defino el color de fondo en body*/
+    font-size:12px;
+}
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+h3{
+    font-size:24px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+
+
+}
+.price {
+    font-size:18px;
+    width: 30%;
+}
+
+.discounts{
+    font-size:16px;
+    width: 70%;
+    font-weight: normal;
+}
+
+.description{
+    font-size:16px;
+    font-weight: normal;
+    /* display: none; */
+    margin-top: 20px;
+}
+
+
+
+header div.logo{
+    width: 30%;
+    padding:10px;
+}
+
+header ul li{
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    display:flex;
+    align-self: flex-start;
+    
+}
+
+header ul li a{    /*etiquetas a de li*/
+    text-decoration: none;
+    color:black;
+    display:flex;
+    align-self: flex-start;
+
+}
+
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+/*MENÚ HAMBURGUESA*/
+div.burger-menu {       /*muevo el CONTENEDOR*/
+    text-align: center;
+    padding-bottom: 12px;  /*lo despego del borde de abajo*/
+}
+
+div.burger-menu i{   /*al poner i, apunto a que mueva LA ETIQUETA I: toda la imagen linkeada i class=fas-fa...*/
+    background-color:var(--light-blue);
+    color:white;
+    padding: 10px;   /*el padding lo separa del CONTENEDOR*/
+    border-radius: 5px;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+}
+/*----*/
+
+.fondo {
+    width: 200px;
+    padding: 3px 1px;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.fondo button i{
+    background-color: #EAC926;
+    border:none;  /*quedó raro*/
+}
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    text-align: center;
+}
+
+article div.main-article{
+    width: 100%;
+    display:flex; /*No olvidar esto*/
+    flex-wrap: flex;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+article.main-article{
+    background-color: #fff;
+}
+section.banner img{
+    width: 100%;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+/*Formulario de login*/
+form * {
+    margin: 5px;
+}
+
+.form-login * {
+    margin-left: 20px;
+    margin-top: 20px;
+    padding:10px;
+    display: flex;
+    border:none;
+    justify-content: space-between;
+    align-content: center;
+    width:70%;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #1259c3;
+    border-radius: 5px;
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/*Formulario de registro*/
+.personalData{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding:10px;
+    display: flex;
+    border:none;
+    justify-content: space-between;
+    align-content: center;
+    width:70%;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.birthTitle h3{
+    font-size: 1.5rem;
+}
+
+.moreInfo{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding:10px;
+    display: flex;
+    border:none;
+    justify-content: space-between;
+    align-content: center;
+    width:70%;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.interests h3{
+    font-size: 1.5rem;
+}
+
+/* .interes{ */
+    /* display:flex; */
+    /* flex-direction: column;   esto queda raro. Lo saco*/
+
+
+.user-picture h3{
+    font-size: 1.5rem;
+}    
+
+.password{
+        margin-left: 20px;
+        margin-top: 20px;
+        padding:10px;
+        display: flex;
+        border:none;
+        justify-content: space-between;
+        align-content: center;
+        width:70%;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+
+/*Responsive*/
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
+
+
+/*footer*/
+
+.main-footer{
+    background-color: #fff;
+    margin:10px;
+    padding-top: 20px;
+}
+
+section.info{
+    text-align: center;
+    color:var(--gray);
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+
+}
+
+section.more-info{
+    color:var(--gray);
+    margin: 10px;
+    padding: 30px;
+
+}
+
+section.info i{     /*mismo que menu hamburguesa. De afuera hacia adentro: etiqueta + nombre clase + etiqueta i*/
+    color:var(--light-blue);
+    font-size:30px;
+}
