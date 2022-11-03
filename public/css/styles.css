@@ -25,8 +25,9 @@ header{
 }
 div.top-header{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 5%;
+    justify-content: space-between;
 }
 header div.top-header p{
     width: 100%;
@@ -35,7 +36,7 @@ header div.top-header p{
 }
 header div.logo,
 header .form{
-    width: 50%;
+    width: 60%;
 }
 
 h3{
@@ -71,28 +72,54 @@ header nav{
     margin-top: 20px;
 }
 
-
-
 header div.logo{
-    width: 30%;
+    width: 60%;
     padding:10px;
 }
 
-header ul li{
+/* header ul li{
     list-style-type: none;
     margin-left: 10px;
     margin-right: 10px;
     display:flex;
     align-self: flex-start;
     
-}
+} */
 
 header ul li a{    /*etiquetas a de li*/
     text-decoration: none;
     color:black;
-    display:flex;
-    align-self: flex-start;
+    /* display:flex;
+    align-self: flex-start; */
 
+}
+
+.generalOptions{
+    display:flex;
+    /* align-self: flex-end; */
+    justify-content: space-around;
+}   
+.sections {
+    list-style-type: none;
+    /* margin-left: 20px;
+    margin-right: 10px; */
+    display:flex;
+    align-self: flex-end;
+    padding:10px;
+}
+.sections a {
+    padding: 15px;
+}
+.userOptions {
+    list-style-type: none;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    display:flex;
+    align-self: flex-end;
+    padding:10px;
+}
+.userOptions a {
+    padding:15px;
 }
 
 
@@ -140,10 +167,7 @@ div.burger-menu i{   /*al poner i, apunto a que mueva LA ETIQUETA I: toda la ima
     box-sizing: border-box;
 }
 
-.fondo button i{
-    background-color: #EAC926;
-    border:none;  /*quedó raro*/
-}
+
 div.last-visit,
 div.offers{
     display: flex;
@@ -152,6 +176,7 @@ div.offers{
 
 .title{
     text-align: center;
+    font-size: 1.1rem;
 }
 
 article div.main-article{
@@ -331,6 +356,15 @@ form * {
     main section div.products article{
         width: 22%;
     }
+    div.burger-menu {     /*oculto después de 769px*/
+        display:none;
+}
+}
+
+@media (max-width: 769px){
+    .generalOptions {
+        display:none;
+    } 
 }
 
 
@@ -355,6 +389,8 @@ section.more-info{
     color:var(--gray);
     margin: 10px;
     padding: 30px;
+    display:flex;
+    justify-content: center;
 
 }
 
